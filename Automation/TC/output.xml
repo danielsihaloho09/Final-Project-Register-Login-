@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221012 23:38:21.641" rpa="false" schemaversion="3">
+<suite id="s1" name="Register" source="C:\Users\DANIEL\Desktop\Automation\TC\Register.robot">
+<test id="s1-t1" name="RegisterTest" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 23:38:21.805" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20221012 23:38:21.803" endtime="20221012 23:38:37.410"/>
+</kw>
+<kw name="registerToApplication">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@title="Log in to your customer account"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221012 23:38:37.412" level="INFO">Clicking link 'xpath=//*[@title="Log in to your customer account"]'.</msg>
+<status status="PASS" starttime="20221012 23:38:37.411" endtime="20221012 23:38:49.052"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="email_create"]</arg>
+<arg>feliksric@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 23:38:49.052" level="INFO">Typing text 'feliksric@gmail.com' into text field 'xpath=//*[@id="email_create"]'.</msg>
+<status status="PASS" starttime="20221012 23:38:49.052" endtime="20221012 23:38:49.139"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="SubmitCreate"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 23:38:49.139" level="INFO">Clicking element 'xpath=//*[@id="SubmitCreate"]'.</msg>
+<status status="PASS" starttime="20221012 23:38:49.139" endtime="20221012 23:38:49.194"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_gender1"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20221012 23:38:54.403" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221012 23:38:54.404" level="FAIL">Element 'xpath=//*[@id="id_gender1"]' not visible after 5 seconds.</msg>
+<status status="FAIL" starttime="20221012 23:38:49.195" endtime="20221012 23:38:54.405"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_gender1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.405" endtime="20221012 23:38:54.405"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="customer_firstname"]</arg>
+<arg>feliks</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.405" endtime="20221012 23:38:54.405"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="customer_lastname"]</arg>
+<arg>ric</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.405" endtime="20221012 23:38:54.405"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="email"]</arg>
+<arg>feliksric@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.405" endtime="20221012 23:38:54.405"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>xpath=//*[@id="passwd"]</arg>
+<arg>feliks123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.405" endtime="20221012 23:38:54.405"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath=//*[@id="days"]</arg>
+<arg>4</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.405" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath=//*[@id="months"]</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@value="2022"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath=//*[@value="2022"]</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="newsletter"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="newsletter"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="optin"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="firstname"]</arg>
+<arg>feliks</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="lastname"]</arg>
+<arg>ric</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="company"]</arg>
+<arg>dojobox</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="address1"]</arg>
+<arg>kenangan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="address2"]</arg>
+<arg>manis</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.406" endtime="20221012 23:38:54.406"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="city"]</arg>
+<arg>Jogja</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_state"]</arg>
+<arg>2</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_state"]</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="postcode"]</arg>
+<arg>93928</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_country"]</arg>
+<arg>21</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>xpath=//*[@id="id_country"]</arg>
+<arg>21</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="other"]</arg>
+<arg>welcome</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="phone"]</arg>
+<arg>9898989334</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="phone_mobile"]</arg>
+<arg>8786565323</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="alias"]</arg>
+<arg>my address</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.407" endtime="20221012 23:38:54.407"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="submitAccount"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.408" endtime="20221012 23:38:54.408"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class="logout"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.408" endtime="20221012 23:38:54.408"/>
+</kw>
+<status status="FAIL" starttime="20221012 23:38:37.410" endtime="20221012 23:38:54.408"/>
+</kw>
+<kw name=" failedregister">
+<status status="NOT RUN" starttime="20221012 23:38:54.408" endtime="20221012 23:38:54.408"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221012 23:38:54.409" endtime="20221012 23:38:54.409"/>
+</kw>
+<status status="FAIL" starttime="20221012 23:38:21.802" endtime="20221012 23:38:54.409">Element 'xpath=//*[@id="id_gender1"]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20221012 23:38:21.643" endtime="20221012 23:38:54.411"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
